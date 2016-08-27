@@ -1,0 +1,66 @@
+
+<div class="main-content">
+
+    <form class="form-login" ng-submit='registerReceptionist()'>
+
+        <div class="form-log-in-with-email">
+
+            <div class="form-white-background">
+
+                <div class="form-title-row">
+                    <h1>Sign up</h1>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>User Name <label class="red">*</label></span>
+                        <input type="text"  ng-model="register.username" required>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Email <label class="red">*</label></span>
+                        <input type="email"  ng-model="register.email" required>
+                    </label>
+                </div>
+
+
+                <div class="form-row">
+                    <label>
+                        <span>Password <label class="red">*</label></span>
+                        <input type="password" name="password" ng-model="register.password" required>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Confirm Password <label class="red">*</label></span>
+                        <input type="password" name="password" ng-model="register.c_password" required>
+                    </label>
+                </div>
+
+
+                <div class="form-row">
+                    <button type="submit" >Sign up</button>
+                </div>
+
+            </div>
+
+            <a href="#/" class="form-create-an-account">Already account login in &rarr;</a>
+
+        </div>
+
+        <div class="form-sign-in-with-social">
+
+            <div class="form-row form-title-row">
+                <span class="form-title">Sign in with</span>
+            </div>
+
+            <a href="#" class="form-google-button">Google</a>
+            <a href="#" class="form-facebook-button">Facebook</a>
+            <a href="#" class="form-twitter-button">Twitter</a>
+
+        </div>
+    </form>
+</div>

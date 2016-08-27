@@ -1,0 +1,120 @@
+/*  Making the form responsive.*/
+
+@media (max-width: 900px) {
+
+    .form-login{
+        margin: 20px auto;
+    }
+
+    .form-log-in-with-email{
+        position: relative;
+        display: block;
+        margin: 0 0 50px;
+    }
+
+    .form-log-in-with-email .form-white-background{
+        margin: 0 auto 32px;
+    }
+
+    .form-log-in-with-email:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    .form-sign-in-with-social{
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .form-log-in-with-email .form-white-background{
+        width: 300px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .form-log-in-with-email .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+
+    .form-log-in-with-email .form-email,
+    .form-log-in-with-email .form-password{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-log-in-with-email:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    .form-log-in-with-email .form-forgotten-password,
+    .form-log-in-with-email .form-create-an-account{
+        display: block;
+        margin: 5px auto;
+        max-width: 180px;
+    }
+
+}
+
+/* Responsive footer */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+    .header-login-signup {
+        padding: 25px;
+        height: 85px;
+    }
+
+    .header-login-signup .header-limiter h1 {
+        float: none;
+        margin: -8px 0 2px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .header-login-signup .header-limiter nav {
+        margin: 0;
+        float: none;
+    }
+
+    .header-login-signup .header-limiter nav li a {
+        font-size: 13px;
+    }
+
+    .header-login-signup .header-limiter ul {
+        display: none;
+    }
+
+}

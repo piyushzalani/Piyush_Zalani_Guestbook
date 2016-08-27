@@ -1,0 +1,40 @@
+<div class="data">
+  <div id="record" style="overflow-x:auto;">
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>In Time</th>
+        <th>Out Time</th>
+        <th></th>
+      </tr>
+      <tr ng-repeat="contact in visitors.contacts" ng-include="getTemplate(contact)"> </tr>       
+    </table>
+
+    <script type="text/ng-template" id="display">
+      <tr>
+        <td>{{contact.VisitorFirstName}}</td>
+        <td>{{contact.VisitorLastName}}</td>
+        <td>{{contact.VisitorEmail}}</td>
+        <td>{{contact.VisitorInTime}}</td>
+        <td>{{contact.VisitorOutTime}}</td>
+        <td>
+            <button ng-click="editContact(contact)">Edit</button>
+        </td>
+      </tr>
+    </script>
+
+    <script type="text/ng-template" id="edit">
+      <td><input type="text" ng-model="contact.VisitorFirstName" /></td>
+      <td><input type="text" ng-model="contact.VisitorLastName" /></td>
+      <td><input type="text" ng-model="contact.VisitorEmail" /></td>
+      <td><input type="text" ng-model="contact.VisitorInTime" /></td>
+      <td><input type="text" ng-model="contact.VisitorOutTime" /></td>
+      <td>
+          <button ng-click="saveContact(contact)">Save</button>
+          <button ng-click="reset()">Cancel</button>
+      </td>
+    </script>
+  </div>
+</div>

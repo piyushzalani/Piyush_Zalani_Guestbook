@@ -1,0 +1,68 @@
+<div class="main-content">
+    <form class="form-login" ng-submit="add()">
+        <div class="form-log-in-with-email">
+            <div class="form-white-background">
+
+                <div class="form-title-row">
+                    <h1>Add Visitor</h1>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>First Name <label class="red">*</label></span>
+                        <input type="text" ng-model="Visitor.firstname" required>
+                    </label>
+                </div>
+
+
+                <div class="form-row">
+                    <label>
+                        <span>Last Name <label class="red">*</label></span>
+                        <input type="text" ng-model="Visitor.lastname" required>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Email <label class="red">*</label></span>
+                        <input type="email" ng-model="Visitor.email" required>
+                    </label>
+                </div>
+
+
+                <div class="form-row">
+                    <label>
+                        <span>In time <label class="red">*</label></span>
+                        <input type="time" ng-model="Visitor.intime" required>
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label>
+                        <span>Out time <label class="red">*</label></span>
+                        <input type="time"  ng-model="Visitor.outtime" required>
+                    </label>
+                </div>
+
+
+                <div class="form-row">
+                    <button type="submit" >Add</button>
+                </div>
+
+            </div>
+
+        </div>
+         <div class="form-sign-in-with-social">
+
+            <div class="form-row form-title-row">
+                <span class="form-title">Try this out</span>
+            </div>
+
+            <a href="#viewVisitor" class="form-google-button">View</a>
+            <a href="#editVisitor" class="form-facebook-button">Edit</a>
+            <a href="#" class="form-twitter-button">Delete</a>
+
+        </div>
+
+    </form>
+</div>
